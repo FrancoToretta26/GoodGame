@@ -33,9 +33,9 @@ import USERLIST from '../_mocks_/user';
 
 const TABLE_HEAD = [
   { id: 'name', label: 'Name', alignRight: false },
-  { id: 'company', label: 'Company', alignRight: false },
+  { id: 'company', label: 'Country', alignRight: false },
   { id: 'role', label: 'Seniority', alignRight: false },
-  { id: 'isVerified', label: 'Verified', alignRight: false },
+  { id: 'price', label: 'Hourly Rate', alignRight: false },
   { id: 'status', label: 'Status', alignRight: false },
   { id: '' }
 ];
@@ -132,19 +132,14 @@ export default function User() {
   const isUserNotFound = filteredUsers.length === 0;
 
   return (
-    <Page title="User | Minimal-UI">
+    <Page title="Choose Testers | Good Game">
       <Container>
         <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
           <Typography variant="h4" gutterBottom>
             User
           </Typography>
-          <Button
-            variant="contained"
-            component={RouterLink}
-            to="#"
-            startIcon={<Icon icon={plusFill} />}
-          >
-            New User
+          <Button variant="contained" component={RouterLink} to="#">
+            Checkout
           </Button>
         </Stack>
 
@@ -171,7 +166,7 @@ export default function User() {
                   {filteredUsers
                     .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                     .map((row) => {
-                      const { id, name, role, status, company, avatarUrl, isVerified } = row;
+                      const { id, name, role, status, company, avatarUrl, price } = row;
                       const isItemSelected = selected.indexOf(name) !== -1;
 
                       return (
@@ -199,7 +194,7 @@ export default function User() {
                           </TableCell>
                           <TableCell align="left">{company}</TableCell>
                           <TableCell align="left">{role}</TableCell>
-                          <TableCell align="left">{isVerified ? 'Yes' : 'No'}</TableCell>
+                          <TableCell align="left">{price}</TableCell>
                           <TableCell align="left">
                             <Label
                               variant="ghost"
