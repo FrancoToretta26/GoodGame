@@ -11,6 +11,8 @@ import Blog from './pages/Blog';
 import User from './pages/User';
 import NotFound from './pages/Page404';
 import Project1 from './pages/Project1';
+import ProjectGame from './pages/ProjectGame';
+import ProjectGameClient from './pages/ProjectGameClient';
 
 // ----------------------------------------------------------------------
 
@@ -23,7 +25,7 @@ export default function Router() {
         { element: <Navigate to="/dashboard/app" replace /> },
         { path: 'products', element: <Products /> },
         { path: 'products/newProject', element: <Project1 /> },
-        { path: 'app', element: <DashboardApp /> },
+        { path: 'app', element: <ProjectGameClient /> },
         { path: 'user', element: <User /> },
         { path: 'blog', element: <Blog /> }
       ]
