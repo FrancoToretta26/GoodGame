@@ -44,23 +44,45 @@ export default function ProjectGame() {
             </Card>
             <Card style={styles.card2}>
                 <CardHeader  
-                title="Past Reports"/>
+                title="Active Reports"/>
                 <CardContent>
                     <div id="listBox2">
                         <Button 
-                        color="inherit"
+                        color="info"
                         variant="contained"
                         href="CasinoRoyale/Report1">BR#000008</Button>
                     </div>
                     <div id="listBox2">
                         <Button 
-                        color="inherit"
+                        color="info"
                         variant="contained">BR#000026</Button>
                     </div>
                 </CardContent>
             </Card>
+            <Card style={styles.card2}>
+                <CardHeader  
+                title="Report History"/>
+                <CardContent>
+                    <div id="listBox2">
+                        <Button 
+                        color="success"
+                        variant="contained"
+                        href="CasinoRoyale/Report1">BR#000022</Button>
+                    </div>
+                    <div id="listBox2">
+                        <Button 
+                        color="success"
+                        variant="contained">BR#000025</Button>
+                    </div>
+                    <div id="listBox2">
+                        <Button 
+                        color="success"
+                        variant="contained">BR#000021</Button>
+                    </div>
+                </CardContent>
+            </Card>        
         </div>
-        <div id="botones">
+        {/* <div id="botones">
             <Button         
                 variant="contained">Download Build
             </Button> 
@@ -68,7 +90,7 @@ export default function ProjectGame() {
                 color="error"      
                 variant="contained">Report a Bug
             </Button> 
-        </div>
+        </div> */}
         </div>
     )
 }

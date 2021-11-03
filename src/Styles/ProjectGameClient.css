@@ -28,10 +28,11 @@
 }
 
 #botonesc{
-    margin-top: 85px;
+    margin-top: 25px;
+    margin-left: 35px;
     display: flex;
-    justify-content: center;
-    gap: 55px;
+    justify-content: flex-start;
+    gap: 15px;
 }
 
 #imgc{

@@ -4,6 +4,7 @@ import CarouselBugReport from '../components/CarouselBugReport';
 import * as React from 'react';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 export default function ProjectGame() {
     const [value, setValue] = React.useState(2);
@@ -24,10 +25,13 @@ export default function ProjectGame() {
                             to spped up the game.
                         </CardContent>
                     </Card>
+                    <br></br>
                     <Card style={styles.card}>
                         <CardHeader    
+                        style={{alignItems:"center", display:"flex"}}
                         title="Severity: Low"/>
                     </Card>
+                    <br></br>
                     <Card style={styles.card}>
                         <CardHeader    
                         title="Steps to reproduce"/>
@@ -59,6 +63,20 @@ export default function ProjectGame() {
             <Icon icon="noto:star" width="20" height="20"/>
             <Icon icon="noto:star" width="20" height="20"/>
             <Icon icon="noto:star" width="20" height="20"/> */}
+        </div>
+        <div id="botonesc">
+            <Button 
+            color="success"
+            variant="contained"
+            >Approve</Button>
+         <Button 
+            color="error"
+            variant="contained"
+            >Decline</Button>       
+         <Button 
+            color="warning"
+            variant="contained"
+            >Download</Button>                                           
         </div>
 
 
