@@ -8,10 +8,10 @@ export default function CarouselBugReport() {
             <Carousel infiniteLoop useKeyboardArrows autoPlay>
                 <div>
                 
-                <img src="https://www.doublegames.com/images/screenshots/clblackjack_1_big.jpg"/>
+                <img src="https://paraguaypferde.com/wp-content/uploads/2020/05/how-do-you-play-blackjack.jpg"/>
                 </div>
                 <div>
-                    <img src="https://todoiure.com.ar/imagenes/blackjack-casino.gif"/>
+                    <img src="https://images-ext-2.discordapp.net/external/Kevj2F9J3P3NjFsqeEfLlZgolfiKvSedyvFY8OMQv2k/https/dotfilmfest.com/wp-content/uploads/2020/09/bovada-blackjack-review1.jpg"/>
                 </div>
             </Carousel>
         </div>

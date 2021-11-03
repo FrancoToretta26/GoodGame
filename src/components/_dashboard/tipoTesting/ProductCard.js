@@ -35,29 +35,11 @@ export default function ShopProductCard({ product }) {
       </Box>
 
       <Stack spacing={2} sx={{ p: 3 }}>
-        <Link to="/products/PlayTesting" color="inherit" underline="hover" component={RouterLink}>
+        <Link to="/dashboard/user" color="inherit" underline="hover" component={RouterLink}>
           <Typography variant="subtitle2" noWrap>
             <center>{name}</center>
           </Typography>
         </Link>
-
-        <Stack direction="row" alignItems="center" justifyContent="space-between">
-          <ColorPreview colors={colors} />
-          <Typography variant="subtitle1">
-            <Typography
-              component="span"
-              variant="body1"
-              sx={{
-                color: 'text.disabled',
-                textDecoration: 'line-through'
-              }}
-            >
-              {priceSale && fCurrency(priceSale)}
-            </Typography>
-            &nbsp;
-            {price}
-          </Typography>
-        </Stack>
       </Stack>
     </Card>
   );
