@@ -1,8 +1,8 @@
 // ----------------------------------------------------------------------
 
 const account = {
-  displayName: 'Agustina Ferraresi',
-  email: 'demo@minimals.cc',
+  displayName: 'John Smith',
+  email: 'johnsmith@EA.com',
   photoURL: '/static/mock-images/avatars/avatar_default.jpg'
 };
 

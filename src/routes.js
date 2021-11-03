@@ -11,6 +11,7 @@ import Blog from './pages/Blog';
 import User from './pages/User';
 import NotFound from './pages/Page404';
 import Project1 from './pages/Project1';
+import PaymentPage from "./components/payment/PaymentPage"
 
 // ----------------------------------------------------------------------
 
@@ -24,6 +25,7 @@ export default function Router() {
         { path: 'products', element: <Products /> },
         { path: 'products/newProject', element: <Project1 /> },
         { path: 'app', element: <DashboardApp /> },
+        { path: 'payment', element: <PaymentPage />},
         { path: 'user', element: <User /> },
         { path: 'blog', element: <Blog /> }
       ]

@@ -51,7 +51,7 @@ const products = [...Array(4)].map((_, index) => {
     id: faker.datatype.uuid(),
     cover: mockImgProduct(setIndex),
     name: PRODUCT_NAME[index],
-    price: faker.datatype.number({ min: 0, max: 99, precision: 0.01 }),
+    price: faker.datatype.number({ min: 70, max: 200, precision: 1 }),
     priceSale: setIndex % 3 ? null : faker.datatype.number({ min: 0, max: 1, precision: 0.01 }),
     colors:
       (setIndex === 1 && PRODUCT_COLOR.slice(0, 2)) ||

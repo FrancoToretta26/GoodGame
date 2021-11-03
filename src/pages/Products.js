@@ -74,7 +74,6 @@ export default function EcommerceShop() {
         </Stack>
 
         <ProductList products={PRODUCTS} />
-        <ProductCartWidget />
         <Stack direction="row" spacing={8} flexShrink={0} sx={{ my: 5 }}>
           <LoadingButton
             size="large"

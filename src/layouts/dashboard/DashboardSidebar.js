@@ -104,7 +104,7 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
 
           <Box sx={{ textAlign: 'center' }}>
             <Typography gutterBottom variant="h6">
-              Do you want to create a new project?
+              Create a new project
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
               Choose between Playtesting, Game testing & Bug bounty.

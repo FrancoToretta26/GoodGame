@@ -28,6 +28,13 @@ import SearchNotFound from '../components/SearchNotFound';
 import { UserListHead, UserListToolbar, UserMoreMenu } from '../components/_dashboard/user';
 //
 import USERLIST from '../_mocks_/user';
+import {
+  ModalProvider,
+  Modal,
+  useModal,
+  ModalTransition,
+} from 'react-simple-hook-modal';
+
 
 // ----------------------------------------------------------------------
 
@@ -36,7 +43,10 @@ const TABLE_HEAD = [
   { id: 'company', label: 'Country', alignRight: false },
   { id: 'role', label: 'Seniority', alignRight: false },
   { id: 'price', label: 'Hourly Rate', alignRight: false },
+  { id: 'hours', label: 'Hours', alignRight: false },
+  { id: 'genres', label: 'Pref. Genres', alignRight: false },
   { id: 'status', label: 'Status', alignRight: false },
+  { id: 'estrellas', label: 'Reputation', alignRight: false },
   { id: '' }
 ];
 
@@ -78,6 +88,7 @@ export default function User() {
   const [orderBy, setOrderBy] = useState('name');
   const [filterName, setFilterName] = useState('');
   const [rowsPerPage, setRowsPerPage] = useState(5);
+  const { isModalOpen, openModal, closeModal } = useModal();
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === 'asc';
@@ -136,9 +147,9 @@ export default function User() {
       <Container>
         <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
           <Typography variant="h4" gutterBottom>
-            User
+            Choose your Testers
           </Typography>
-          <Button variant="contained" component={RouterLink} to="#">
+          <Button variant="contained" component={RouterLink} to="/dashboard/payment">
             Checkout
           </Button>
         </Stack>
@@ -166,7 +177,7 @@ export default function User() {
                   {filteredUsers
                     .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                     .map((row) => {
-                      const { id, name, role, status, company, avatarUrl, price } = row;
+                      const { id, name, role, status, company, avatarUrl, price, genre, hours, estrellas } = row;
                       const isItemSelected = selected.indexOf(name) !== -1;
 
                       return (
@@ -195,6 +206,8 @@ export default function User() {
                           <TableCell align="left">{company}</TableCell>
                           <TableCell align="left">{role}</TableCell>
                           <TableCell align="left">{price}</TableCell>
+                          <TableCell align="left">{hours}</TableCell>
+                          <TableCell align="left">{genre}</TableCell>
                           <TableCell align="left">
                             <Label
                               variant="ghost"
@@ -203,6 +216,7 @@ export default function User() {
                               {sentenceCase(status)}
                             </Label>
                           </TableCell>
+                          <TableCell align="left">{estrellas}</TableCell>
 
                           <TableCell align="right">
                             <UserMoreMenu />

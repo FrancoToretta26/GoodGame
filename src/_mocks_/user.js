@@ -1,7 +1,13 @@
+import * as React from 'react';
 import faker from 'faker';
 import { sample } from 'lodash';
 // utils
+import { Icon } from '@iconify/react';
 import { mockImgAvatar } from '../utils/mockImages';
+import { TableCell, Typography } from '@mui/material';
+import InputSpinner from 'react-bootstrap-input-spinner' 
+import TextFieldSelect from '../components/TextFieldSelect';
+import MenuItem from '@mui/material/MenuItem';
 
 // ----------------------------------------------------------------------
 
@@ -88,18 +94,18 @@ const PRICE = [
 ];
 
 const SENIORITY = [
-  'Junior-Tester',
-  'Junior-Tester',
-  'Junior-Tester',
-  'Junior-Tester',
-  'Junior-Tester',
-  'Junior-Tester',
-  'Junior-Tester',
-  'Junior-Tester',
-  'Junior-Tester',
-  'Junior-Tester',
-  'Junior-Tester',
-  'Junior-Tester',
+  'Junior Tester',
+  'Junior Tester',
+  'Junior Tester',
+  'Junior Tester',
+  'Junior Tester',
+  'Junior Tester',
+  'Junior Tester',
+  'Junior Tester',
+  'Junior Tester',
+  'Junior Tester',
+  'Junior Tester',
+  'Junior Tester',
   'Semi-Senior Tester',
   'Semi-Senior Tester',
   'Semi-Senior Tester',
@@ -108,19 +114,225 @@ const SENIORITY = [
   'Semi-Senior Tester',
   'Semi-Senior Tester',
   'Semi-Senior Tester',
-  'Senior-Tester',
-  'Senior-Tester',
-  'Senior-Tester',
-  'Senior-Tester',
-  'Senior-Tester',
-  'Senior-Tester',
-  'Senior-Tester',
-  'Senior-Tester',
-  'Senior-Tester',
-  'Senior-Tester',
-  'Senior-Tester',
-  'Senior-Tester'
+  'Senior Tester',
+  'Senior Tester',
+  'Senior Tester',
+  'Senior Tester',
+  'Senior Tester',
+  'Senior Tester',
+  'Senior Tester',
+  'Senior Tester',
+  'Senior Tester',
+  'Senior Tester',
+  'Senior Tester',
+  'Senior Tester'
 ];
+
+const ESTRELLAS = [
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>,
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>, 
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>,  
+<TableCell padding="none" align='center'>
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+<Icon icon="noto:star" width="18" height="18"/> 
+</TableCell>,  
+
+];
+
+
+
+const HOURS = [
+  <TableCell padding="none" align='center'>
+  <TextFieldSelect/>
+  </TableCell>,
+  <TableCell padding="none" align='center'>
+   <TextFieldSelect/>
+  </TableCell>,
+  <TableCell padding="none" align='center'>
+  <TextFieldSelect/>
+ </TableCell>,
+  <TableCell padding="none" align='center'>
+  <TextFieldSelect/>
+ </TableCell>,
+  <TableCell padding="none" align='center'>
+  <TextFieldSelect/>
+ </TableCell>,
+   <TableCell padding="none" align='center'>
+   <TextFieldSelect/>
+  </TableCell>,
+    <TableCell padding="none" align='center'>
+    <TextFieldSelect/>
+   </TableCell>,
+     <TableCell padding="none" align='center'>
+     <TextFieldSelect/>
+    </TableCell>,
+      <TableCell padding="none" align='center'>
+      <TextFieldSelect/>
+     </TableCell>,
+       <TableCell padding="none" align='center'>
+       <TextFieldSelect/>
+      </TableCell>,
+        <TableCell padding="none" align='center'>
+        <TextFieldSelect/>
+       </TableCell>,
+        <TableCell padding="none" align='center'>
+        <TextFieldSelect/>
+       </TableCell>,
+         <TableCell padding="none" align='center'>
+         <TextFieldSelect/>
+        </TableCell>,
+          <TableCell padding="none" align='center'>
+          <TextFieldSelect/>
+         </TableCell>,
+           <TableCell padding="none" align='center'>
+           <TextFieldSelect/>
+          </TableCell>,
+            <TableCell padding="none" align='center'>
+            <TextFieldSelect/>
+           </TableCell>,
+             <TableCell padding="none" align='center'>
+             <TextFieldSelect/>
+            </TableCell>,
+              <TableCell padding="none" align='center'>
+              <TextFieldSelect/>
+             </TableCell>,
+               <TableCell padding="none" align='center'>
+               <TextFieldSelect/>
+              </TableCell>,
+                <TableCell padding="none" align='center'>
+                <TextFieldSelect/>
+               </TableCell>,
+                 <TableCell padding="none" align='center'>
+                 <TextFieldSelect/>
+                </TableCell>,
+                  <TableCell padding="none" align='center'>
+                  <TextFieldSelect/>
+                 </TableCell>,
+                   <TableCell padding="none" align='center'>
+                   <TextFieldSelect/>
+                  </TableCell>,
+                    <TableCell padding="none" align='center'>
+                    <TextFieldSelect/>
+                   </TableCell>,
+]
+
 
 const users = [...Array(24)].map((_, index) => ({
   id: faker.datatype.uuid(),
@@ -129,7 +341,10 @@ const users = [...Array(24)].map((_, index) => ({
   company: COUNTRY[index],
   price: PRICE[index],
   status: sample(['Available', 'Not available']),
-  role: SENIORITY[index]
+  role: SENIORITY[index],
+  estrellas: ESTRELLAS[index],
+  hours: HOURS[index],
+  genre: sample(['Action', 'Adventure', 'Adventure', 'Role', 'Simulation','Strategy','Sports','MMO'])
 }));
 
 export default users;

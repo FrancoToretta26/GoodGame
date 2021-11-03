@@ -34,7 +34,7 @@ const IconWrapperStyle = styled('div')(({ theme }) => ({
 
 // ----------------------------------------------------------------------
 
-const TOTAL = 234;
+const TOTAL = 7;
 
 export default function AppBugReports() {
   return (
