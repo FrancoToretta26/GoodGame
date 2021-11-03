@@ -1,6 +1,5 @@
 import { Card, CardHeader, CardContent } from '@mui/material';
 import '../Styles/ProjectGameClient.css';
-import { Icon } from '@iconify/react';
 import CarouselBugReport from '../components/CarouselBugReport';
 import * as React from 'react';
 import Rating from '@mui/material/Rating';
@@ -10,12 +9,12 @@ export default function ProjectGame() {
     const [value, setValue] = React.useState(2);
     return(
         <div>
-            <p id="title">BR#000008</p>
-            <p id="subTitle">BlackJack not working as expected</p>
+            <p id="titlec">BR#000008</p>
+            <p id="subTitlec">BlackJack not working as expected</p>
 
-            <div id="pageContainer">
+            <div id="pageContainerc">
 
-                <div id="cards">
+                <div id="cardsc">
                     <Card style={styles.card}>
                         <CardHeader    
                         title="Description"/>
@@ -46,7 +45,7 @@ export default function ProjectGame() {
                       
             </div>
             
-        <div id="stars">
+        <div id="starsc">
             <p style={{fontSize:'15px', marginLeft:'5px'}}>Rate the bug report</p>
             <Typography component="legend"></Typography>
             <Rating

@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardContent } from '@mui/material';
 import '../Styles/ProjectGame.css';
 import Button from '@mui/material/Button';
+import ProjectGameClient from './ProjectGameClient';
 
 export default function ProjectGame() {
     return(
@@ -47,6 +48,7 @@ export default function ProjectGame() {
                 <CardContent>
                     <div id="listBox2">
                         <Button 
+                        onClick={this.push(ProjectGameClient)}
                         color="inherit"
                         variant="contained">BR#000008</Button>
                     </div>

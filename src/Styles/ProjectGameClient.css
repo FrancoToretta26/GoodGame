@@ -1,4 +1,4 @@
-#cards {
+#cardsc {
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 35px;
@@ -6,60 +6,60 @@
     font-size: 13px;
 }
 
-#title{
+#titlec{
     font-size: 25px;
     font-weight: bold;
     text-align: center;
 }
 
-#subTitle{
+#subTitlec{
     font-size: 15px;
     margin-bottom: 55px;
     text-align: center;
     color: gray;
 }
 
-#card {
+#cardc {
     width: '40%';
 }
 
-#title{
+#titlec{
     align-items: center;
 }
 
-#botones{
+#botonesc{
     margin-top: 85px;
     display: flex;
     justify-content: center;
     gap: 55px;
 }
 
-#img{
+#imgc{
     width: 40px;
     height: 40px;
     border-radius: 15px;
 }
 
-#listBox{
+#listBoxc{
     margin-bottom: 10px;
     display: flex;
     justify-content: flex-start;
     gap: 15px;
 }
 
-#listBox2{
+#listBox2c{
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
     gap: 15px;
 }
 
-#listText{
+#listTextc{
     font-weight: bold;
     font-size: 10px;
 }
 
-#listText2{
+#listText2c{
     border: 2px solid gray;
     padding: 5px;
     margin-top: 7px;
@@ -69,7 +69,7 @@
     padding-right: 20px;
 }
 
-#stars{
+#starsc{
     margin-top: 25px;
     display: flex;
     justify-content: flex-start;
@@ -77,7 +77,7 @@
     margin-left: 35px;
 }
 
-#pageContainer{
+#pageContainerc{
     display: flex;
     justify-content: center;
 }
