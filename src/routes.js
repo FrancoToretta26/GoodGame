@@ -47,7 +47,8 @@ export default function Router() {
       element: <DashboardLayout />,
       children: [
         { element: <Navigate to="/dashboard/app" replace /> },
-        { path: 'NBA', element: <Project1 /> }
+        { path: 'CasinoRoyale', element: <ProjectGame /> },
+        { path: 'CasinoRoyale/Report1', element: <ProjectGameClient /> }
       ]
     }
   ]);

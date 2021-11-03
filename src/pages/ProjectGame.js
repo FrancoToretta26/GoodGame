@@ -48,9 +48,9 @@ export default function ProjectGame() {
                 <CardContent>
                     <div id="listBox2">
                         <Button 
-                        onClick={this.push(ProjectGameClient)}
                         color="inherit"
-                        variant="contained">BR#000008</Button>
+                        variant="contained"
+                        href="CasinoRoyale/Report1">BR#000008</Button>
                     </div>
                     <div id="listBox2">
                         <Button 
