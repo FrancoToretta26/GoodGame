@@ -25,7 +25,7 @@ const PRODUCT_NAME = [
   'Maria Fernandez',
   'Cristina Kim',
   'Jorge Barreto',
-  'Marcos Perez',
+  'Juliana Perez',
   'Rodrigo Garcia',
   'Pablo Mamani',
   'Fernando McAllister',
@@ -35,7 +35,7 @@ const PRODUCT_NAME = [
   'Ricardo Perez Carmona',
   'Franco Nerez',
   'Roman Quispe',
-  'Roberto Flores'
+  'Roberta Flores'
 ];
 
 const COUNTRY = [

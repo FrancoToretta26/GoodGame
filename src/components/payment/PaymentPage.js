@@ -106,7 +106,7 @@ const PaymentPage = () => (
             Total Price of Tester Per Hour: <b>$42</b>
             </Typography>
             <Typography>
-            Hour Multiplier: <b>26</b>
+            Hour Multiplier: <b>x26</b>
             </Typography>
             <Button style={styles.btn} to="/" size="small" variant="contained" component={RouterLink}>
                 Pay: 1092$
