@@ -56,11 +56,13 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
         '& .simplebar-content': { height: '100%', display: 'flex', flexDirection: 'column' }
       }}
     >
-      <Box sx={{ px: 2.5, py: 3 }}>
-        <Box component={RouterLink} to="/" sx={{ display: 'inline-flex' }}>
-          <Logo />
+      <center>
+        <Box sx={{ px: 2.5, py: 3 }}>
+          <Box component={RouterLink} to="/" sx={{ display: 'inline-flex' }}>
+            <Logo />
+          </Box>
         </Box>
-      </Box>
+      </center>
 
       <Box sx={{ mb: 5, mx: 2.5 }}>
         <Link underline="none" component={RouterLink} to="#">
@@ -102,20 +104,15 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
 
           <Box sx={{ textAlign: 'center' }}>
             <Typography gutterBottom variant="h6">
-              You want to show yourself?
+              Create a new project
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              Suscribite papa
+              Choose between Playtesting, Game testing & Bug bounty.
             </Typography>
           </Box>
 
-          <Button
-            fullWidth
-            href="https://material-ui.com/store/items/minimal-dashboard/"
-            target="_blank"
-            variant="contained"
-          >
-            Suscribe
+          <Button fullWidth href="products/newProject" target="_blank" variant="contained">
+            Start a new project
           </Button>
         </Stack>
       </Box>

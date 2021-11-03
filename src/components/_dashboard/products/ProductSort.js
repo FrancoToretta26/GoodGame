@@ -8,10 +8,8 @@ import { Menu, Button, MenuItem, Typography } from '@mui/material';
 // ----------------------------------------------------------------------
 
 const SORT_BY_OPTIONS = [
-  { value: 'featured', label: 'Featured' },
-  { value: 'newest', label: 'Newest' },
-  { value: 'priceDesc', label: 'Price: High-Low' },
-  { value: 'priceAsc', label: 'Price: Low-High' }
+  { value: 'featured', label: 'Finished' },
+  { value: 'newest', label: 'Unfinished' },
 ];
 
 export default function ShopProductSort() {
@@ -35,7 +33,7 @@ export default function ShopProductSort() {
       >
         Sort By:&nbsp;
         <Typography component="span" variant="subtitle2" sx={{ color: 'text.secondary' }}>
-          Newest
+          Unfinished
         </Typography>
       </Button>
       <Menu

@@ -13,6 +13,7 @@ import NotFound from './pages/Page404';
 import Project1 from './pages/Project1';
 import ProjectGame from './pages/ProjectGame';
 import ProjectGameClient from './pages/ProjectGameClient';
+import PaymentPage from "./components/payment/PaymentPage";
 
 // ----------------------------------------------------------------------
 
@@ -25,7 +26,8 @@ export default function Router() {
         { element: <Navigate to="/dashboard/app" replace /> },
         { path: 'products', element: <Products /> },
         { path: 'products/newProject', element: <Project1 /> },
-        { path: 'app', element: <ProjectGame /> },
+        { path: 'app', element: <DashboardApp /> },
+        { path: 'payment', element: <PaymentPage />},
         { path: 'user', element: <User /> },
         { path: 'blog', element: <Blog /> }
       ]
