@@ -11,7 +11,9 @@ import Blog from './pages/Blog';
 import User from './pages/User';
 import NotFound from './pages/Page404';
 import Project1 from './pages/Project1';
-import PaymentPage from "./components/payment/PaymentPage"
+import ProjectGame from './pages/ProjectGame';
+import ProjectGameClient from './pages/ProjectGameClient';
+import PaymentPage from "./components/payment/PaymentPage";
 
 // ----------------------------------------------------------------------
 

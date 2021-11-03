@@ -1,0 +1,83 @@
+#cardsc {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 35px;
+    gap: 25px;
+    font-size: 13px;
+}
+
+#titlec{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#subTitlec{
+    font-size: 15px;
+    margin-bottom: 55px;
+    text-align: center;
+    color: gray;
+}
+
+#cardc {
+    width: '40%';
+}
+
+#titlec{
+    align-items: center;
+}
+
+#botonesc{
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+
+#imgc{
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+#listBoxc{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+#listBox2c{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#listTextc{
+    font-weight: bold;
+    font-size: 10px;
+}
+
+#listText2c{
+    border: 2px solid gray;
+    padding: 5px;
+    margin-top: 7px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#starsc{
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-left: 35px;
+}
+
+#pageContainerc{
+    display: flex;
+    justify-content: center;
+}
