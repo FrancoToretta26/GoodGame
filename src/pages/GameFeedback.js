@@ -4,9 +4,9 @@ import { useState } from 'react';
 import { Container, Stack, Typography } from '@mui/material';
 // components
 import Page from '../components/Page';
-import { ProductList, ProductFilterSidebar } from '../components/_dashboard/tipoTesting';
+import { ProductList, ProductFilterSidebar } from '../components/_dashboard/Feedback';
 //
-import PRODUCTS from '../_mocks_/TipodeTesting';
+import PRODUCTS from '../_mocks_/Paquetes';
 
 // ----------------------------------------------------------------------
 
@@ -45,7 +45,7 @@ export default function EcommerceShop() {
     <Page title="Good Game">
       <Container>
         <Typography variant="h4" sx={{ mb: 5 }}>
-          What kind of project would you like to start?
+          A plan that fits your needs
         </Typography>
         <Stack
           direction="row"

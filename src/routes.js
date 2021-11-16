@@ -14,7 +14,9 @@ import Project1 from './pages/Project1';
 import ProjectGame from './pages/ProjectGame';
 import ProjectGameClient from './pages/ProjectGameClient';
 import PaymentPage from "./components/payment/PaymentPage";
-
+import DashboardAppTester from './pages/DashboardAppTester';
+import DashboardLayoutTester from './layouts/dashboardTester';
+import Feedback from './pages/GameFeedback';
 // ----------------------------------------------------------------------
 
 export default function Router() {
@@ -26,6 +28,7 @@ export default function Router() {
         { element: <Navigate to="/dashboard/app" replace /> },
         { path: 'products', element: <Products /> },
         { path: 'products/newProject', element: <Project1 /> },
+        { path: 'products/newProject/GameFeedback', element: <Feedback/>},
         { path: 'app', element: <DashboardApp /> },
         { path: 'payment', element: <PaymentPage />},
         { path: 'user', element: <User /> },
@@ -50,6 +53,19 @@ export default function Router() {
         { path: 'CasinoRoyale', element: <ProjectGame /> },
         { path: 'CasinoRoyale/Report1', element: <ProjectGameClient /> }
       ]
-    }
+    },
+    {
+      path: '/dashboardTester',
+      element: <DashboardLayoutTester />,
+      children: [
+        { element: <Navigate to="/dashboardTester/app" replace /> },
+        { path: 'products', element: <Products /> },
+        { path: 'products/newProject', element: <Project1 /> },
+        { path: 'app', element: <DashboardAppTester /> },
+        { path: 'payment', element: <PaymentPage />},
+        { path: 'user', element: <User /> },
+        { path: 'blog', element: <Blog /> }
+      ]
+    },
   ]);
 }

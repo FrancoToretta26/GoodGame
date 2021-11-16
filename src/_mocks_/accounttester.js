@@ -1,11 +1,11 @@
 // ----------------------------------------------------------------------
 
-const account = {
-  displayName: 'John Smith',
+const accounttester = {
+  displayName: 'Agustina Ferraresi',
   email: 'johnsmith@EA.com',
   photoURL: '/static/mock-images/avatars/avatar_default.jpg'
 };
 
 
 
-export default account;
+export default accounttester;
