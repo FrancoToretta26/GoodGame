@@ -13,6 +13,7 @@ import NotFound from './pages/Page404';
 import Project1 from './pages/Project1';
 import ProjectGame from './pages/ProjectGame';
 import ProjectGameClient from './pages/ProjectGameClient';
+import ProjectFeedbackGamer from './pages/ProjectFeedbackGamer';
 import PaymentPage from "./components/payment/PaymentPage";
 import DashboardAppTester from './pages/DashboardAppTester';
 import DashboardLayoutTester from './layouts/dashboardTester';
@@ -52,6 +53,15 @@ export default function Router() {
         { element: <Navigate to="/dashboard/app" replace /> },
         { path: 'CasinoRoyale', element: <ProjectGame /> },
         { path: 'CasinoRoyale/Report1', element: <ProjectGameClient /> }
+      ]
+    },
+    {
+      path: '/products',
+      element: <DashboardLayout />,
+      children: [
+        { element: <Navigate to="/dashboard/app" replace /> },
+        { path: 'CasinoRoyale', element: <ProjectGame /> },
+        { path: 'CasinoRoyale/Feedback', element: <ProjectFeedbackGamer /> }
       ]
     },
     {

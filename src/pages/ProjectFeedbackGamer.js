@@ -1,0 +1,187 @@
+import { Card, CardHeader, CardContent } from '@mui/material';
+import '../Styles/ProjectGameClient.css';
+import CarouselBugReport from '../components/CarouselBugReport';
+import * as React from 'react';
+import Rating from '@mui/material/Rating';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+
+export default function ProjectFeedbackGamer() {
+    const [value, setValue] = React.useState(2);
+    return(
+        <div>
+            <p id="titlec">BR#000008</p>
+            <p id="subTitlec">BlackJack not working as expected</p>
+
+            <div id="pageContainerc">
+
+                <div id="cardsc">
+                    <Card style={styles.card}>
+                        <CardHeader title="Gamer's Feedback"/>
+                        
+                        <div id="starsfeed">
+                        <CardContent id="textStar">Gameplay 
+                                <Rating id="star"
+                                    name="read-only"
+                                    value={5}
+                                    readOnly
+                                />
+                                {/* <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/> */}
+                        </CardContent>
+
+                        </div>
+                        <div id="starsfeed">
+                        <CardContent id="textStar">Music 
+                                <Rating id="star"
+                                    name="read-only"
+                                    value={5}
+                                    readOnly
+                                />
+                                {/* <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/> */}
+                        </CardContent>
+                        </div>
+
+                        <div id="starsfeed">
+                        <CardContent id="textStar">Graphics 
+                                <Rating id="star"
+                                    name="read-only"
+                                    value={5}
+                                    readOnly
+                                />
+                                {/* <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/> */}
+                        </CardContent>
+                        </div>
+
+                        <div id="starsfeed">
+                        <CardContent id="textStar">Narrative 
+                                <Rating id="star"
+                                    name="read-only"
+                                    value={5}
+                                    readOnly
+                                />
+                                {/* <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/> */}
+                        </CardContent>
+                        </div>
+
+                        <div id="starsfeed">
+                        <CardContent id="textStar">Animation 
+                                <Rating id="star"
+                                    name="read-only"
+                                    value={5}
+                                    readOnly
+                                />
+                                {/* <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/> */}
+                        </CardContent>
+                        </div>
+
+                        <div id="starsfeed">
+                        <CardContent id="textStar">Tutorial 
+                                <Rating id="star"
+                                    name="read-only"
+                                    value={5}
+                                    readOnly
+                                />
+                                {/* <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/> */}
+                        </CardContent>
+                        </div>
+
+                        <div>
+                        <CardContent id="textStar">Worldbuilding 
+                                <Rating id="star"
+                                    name="read-only"
+                                    value={5}
+                                    readOnly
+                                />
+                                {/* <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/>
+                                <Icon icon="noto:star" width="20" height="20"/> */}
+                        </CardContent>
+                        
+                        </div>
+                        
+                    </Card>
+                    <br></br>
+                    <Card style={styles.card}>
+                        <CardHeader    
+                        title="Description"/>
+                        <CardContent>When a user wins a match of blackjack and quit the game, the funds are not available in the user wallet
+                        When a user wins a match of blackjack and quit the game, the funds are not available in the user wallet
+                        When a user wins a match of blackjack and quit the game, the funds are not available in the user wallet 
+                            to spped up the game.
+                        </CardContent>
+                    </Card>
+                    <br></br>
+                    <Card style={styles.card}>
+                        <CardHeader    
+                        style={{alignItems:"center", display:"flex"}}
+                        title="Severity: Low"/>
+                    </Card>
+                    <br></br>
+                    <Card style={styles.card}>
+                        <CardHeader    
+                        title="Steps to reproduce"/>
+                        <CardContent><p>1- Start a normal BlackJack Game</p>
+                        <p>2- Play until you win</p>
+                        <p>3- Make a money checkout</p>
+                        <p>4- Check your wallet, it'll have less funds than it should</p>
+                        </CardContent>
+                    </Card>
+                </div>  
+
+                <div>
+                    <CarouselBugReport></CarouselBugReport>
+                </div>  
+                      
+            </div>
+        <div id="botonesc">
+            <Button 
+            color="success"
+            variant="contained"
+            >Approve</Button>
+         <Button 
+            color="error"
+            variant="contained"
+            >Decline</Button>       
+         <Button 
+            color="warning"
+            variant="contained"
+            >Download</Button>                                           
+        </div>
+
+
+
+        </div>
+    )
+}
+
+
+const styles = {
+    card:{
+        width:'90%',
+        //marginLeft:'10%'
+    },
+    card2:{
+        width:'15%',
+        marginLeft:'5%'
+    }
+
+}

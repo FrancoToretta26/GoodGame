@@ -82,3 +82,17 @@
     display: flex;
     justify-content: center;
 }
+#starsfeed{
+    margin-bottom: -25px;
+    display: flex;
+    justify-content: flex-start;
+}
+#star{
+    margin-left: 15px;
+    justify-content: center;
+}
+#textStar{
+    font-size: 18px;
+    justify-content: flex-start;
+    display: flex;
+}
