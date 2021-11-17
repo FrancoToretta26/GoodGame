@@ -1,9 +1,10 @@
-#cardsc {
+#cardo {
     flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 35px;
     gap: 25px;
     font-size: 13px;
+    width: 50%;
+    margin-right: 60px;
+    margin-left: 20px;
 }
 
 #titlec{
@@ -28,11 +29,10 @@
 }
 
 #botonesc{
-    margin-top: 25px;
-    margin-left: 35px;
+    margin-top: 100px;
+    margin-right: 20px;
     display: flex;
-    justify-content: flex-start;
-    gap: 15px;
+    justify-content: flex-end;
 }
 
 #imgc{
@@ -78,16 +78,12 @@
     margin-left: 35px;
 }
 
-#pageContainerc{
+#pageContainerd{
     display: flex;
     justify-content: center;
 }
 
-
-#dropZone{
-    width: 1000px;
-}
-
-#formInput{
-    margin-top: 10px;
+#dropFile{
+    width: 50%;
+    margin-right: 20px;
 }
