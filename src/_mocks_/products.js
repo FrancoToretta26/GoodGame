@@ -35,7 +35,7 @@ const PRODUCT_NAME = [
 const PRODUCT_LINK = [
   'NBAArcade',
   'CasinoRoyale',
-  'ProjectFeedback',
+  'CasinoRoyaleFeedback',
   'AgeofWarriors',
   'NikeZoomXSuperRepSurge',
   'Zoom Freak 2',

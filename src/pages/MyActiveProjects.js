@@ -50,7 +50,7 @@ export default function EcommerceShop() {
     <Page title="My Projects | Good Game">
       <Container>
         <Typography variant="h4" sx={{ mb: 5 }}>
-          My Projects
+          My Active Projects
         </Typography>
 
         <Stack

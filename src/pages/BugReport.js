@@ -9,6 +9,39 @@ import MenuItem from '@material-ui/core/MenuItem'
 
 export default function ProjectGame() {
     const [value, setValue] = React.useState(2);
+
+    const alturas = [
+        {
+          value: 'Not Priorized',
+          label: 'Not Priorized',
+        },
+        {
+          value: 'Blocker',
+          label: 'Blocker',
+        },
+        {
+          value: 'Critical',
+          label: 'Critical',
+        },
+        {
+          value: 'Major',
+          label: 'Major',
+        },
+        {
+            value: 'Minor',
+            label: 'Minor',
+          },
+          {
+            value: 'Trivial',
+            label: 'Trivial',
+          },
+      ];
+
+      const [alturaDropdown, setalturaDropdown] = React.useState('');
+
+      const handleChangeAltura = (event) => {
+        setalturaDropdown(event.target.value);
+      };
     return(
         <div id="">
             <p id="titlec">Report a Bug</p>
@@ -21,10 +54,21 @@ export default function ProjectGame() {
                         <br></br>
                         <TextField id="" label="Description" variant="outlined" margin="normal" multiline rows="8" fullWidth/>                        
                         <br></br>
-                        <TextField id="select" label="Severity" variant="outlined" margin="normal" fullWidth select>
-                            <MenuItem value="10">Low</MenuItem>
-                            <MenuItem value="20">Medium</MenuItem>
-                            <MenuItem value="20">High</MenuItem>
+                        <TextField 
+                            id="select" 
+                            label="Severity" 
+                            variant="outlined" 
+                            margin="normal" 
+                            fullWidth 
+                            select 
+                            value={alturaDropdown}
+                            onChange={handleChangeAltura} 
+                            >
+                            {alturas.map((option) => (
+                            <MenuItem key={option.value} value={option.value}>
+                            {option.label}
+                            </MenuItem>
+                  ))}
                         </TextField>
                         <br></br>
                         <TextField id="" label="Steps to reproduce" variant="outlined" margin="normal" multiline rows="8" fullWidth/>

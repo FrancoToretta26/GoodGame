@@ -12,6 +12,7 @@ import User from './pages/User';
 import NotFound from './pages/Page404';
 import Project1 from './pages/Project1';
 import ProjectGame from './pages/ProjectGame';
+import ProjectGameFeedback from './pages/ProjectGameFeedback';
 import ProjectGameClient from './pages/ProjectGameClient';
 import PaymentPage from "./components/paymentGameTesting/PaymentPage";
 import PaymentFeedback from "./components/paymentGameFeedback/PaymentPage";
@@ -62,7 +63,8 @@ export default function Router() {
       children: [
         { element: <Navigate to="/dashboard/app" replace /> },
         { path: 'CasinoRoyale', element: <ProjectGame /> },
-        { path: 'ProjectFeedback', element: <ProjectFeedbackGamer/>}
+        { path: 'CasinoRoyaleFeedback', element: <ProjectGameFeedback /> },
+        { path: 'CasinoRoyale/Feedback', element: <ProjectFeedbackGamer/>}
       ]
     },
     {
