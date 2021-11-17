@@ -24,6 +24,7 @@ import BugReport from './pages/BugReport';
 import FeedbackGamer from './pages/FeedbackGamer';
 import MyActiveProjects from './pages/MyActiveProjects';
 import ProjectGameTester from './pages/ProjectGameTester';
+import ProjectGameTesterFeedback from './pages/ProjectGameTesterFeedback';
 // ----------------------------------------------------------------------
 export default function Router() {
   return useRoutes([
@@ -70,7 +71,8 @@ export default function Router() {
       children: [
         { element: <Navigate to="/dashboardTester/app" replace /> },
         { path: 'CasinoRoyale', element: <ProjectGameTester /> },
-        { path: 'FeedbackGamer', element: <FeedbackGamer /> },
+        { path: 'CasinoRoyaleFeedback', element: <ProjectGameTesterFeedback /> },
+        { path: 'CasinoRoyale/FeedbackGamer', element: <FeedbackGamer /> },
         { path: 'CasinoRoyale/Report', element: <BugReport /> }
       ]
     },

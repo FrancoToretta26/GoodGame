@@ -11,8 +11,8 @@ export default function ProjectGame() {
     const [value, setValue] = React.useState(2);
     return(
         <div id="">
-            <p id="titlec">BR#000008</p>
-            <p id="subTitlec">BlackJack not working as expected</p>
+            <p id="titlec">Report a Bug</p>
+            <p id="subTitlec">Describe the bug that you found.</p>
 
             <div id="pageContainerd">
 

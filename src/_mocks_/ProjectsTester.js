@@ -9,7 +9,7 @@ const PRODUCT_NAME = [
   'NBA Arcade',
   'Casino Royale',
   'Casino Royale',
-  'F1 Arcade',
+  'Age of Warrior',
   'Nike ZoomX SuperRep Surge',
   'Zoom Freak 2',
   'Nike Air Max Zephyr',
@@ -35,7 +35,7 @@ const PRODUCT_NAME = [
 const PRODUCT_LINK = [
   'NBAArcade',
   'CasinoRoyale',
-  'FeedbackGamer',
+  'CasinoRoyaleFeedback',
   'AgeofWarriors',
   'NikeZoomXSuperRepSurge',
   'Zoom Freak 2',

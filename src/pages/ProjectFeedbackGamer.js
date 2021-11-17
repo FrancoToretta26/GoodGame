@@ -134,9 +134,9 @@ export default function ProjectFeedbackGamer() {
                     </Card>
                     <br></br>
                 </div> 
-                      
             </div>
-        <div id="botonesc">
+            <br/>
+        <div id="pageContainerc">
 
             <Button id="botonprevius"
             color="inherit"
