@@ -53,7 +53,7 @@ export default function Router() {
       children: [
         { element: <Navigate to="/dashboard/app" replace /> },
         { path: 'CasinoRoyale', element: <ProjectGame /> },
-        { path: 'CasinoRoyale/Report1', element: <BugReport /> }
+        { path: 'CasinoRoyale/Report1', element: <ProjectGameClient /> }
       ]
     },
     {

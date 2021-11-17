@@ -1,67 +1,49 @@
-import { Card, CardHeader, CardContent } from '@mui/material';
-import '../Styles/ProjectGameClient.css';
-import CarouselBugReport from '../components/CarouselBugReport';
+import '../Styles/BugReport.css';
 import * as React from 'react';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import DropzoneAreaBug from 'src/components/DropzoneAreaBug';
 import TextField from '@material-ui/core/TextField';
+import MenuItem from '@material-ui/core/MenuItem'
 
 export default function ProjectGame() {
     const [value, setValue] = React.useState(2);
     return(
-        <div>
+        <div id="">
             <p id="titlec">BR#000008</p>
             <p id="subTitlec">BlackJack not working as expected</p>
 
-            <div id="pageContainerc">
+            <div id="pageContainerd">
 
-                <div id="cardsc">
-                    <Card style={styles.card}>
-                        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-                        <TextField id="filled-basic" label="Filled" variant="filled" />
-                        <TextField id="standard-basic" label="Standard" variant="standard" />
-                    </Card>
+                <div id="cardo">
+                        <TextField id="" label="Title" variant="outlined" margin="normal" fullWidth/>
+                        <br></br>
+                        <TextField id="" label="Description" variant="outlined" margin="normal" multiline rows="8" fullWidth/>                        
+                        <br></br>
+                        <TextField id="select" label="Severity" variant="outlined" margin="normal" fullWidth select>
+                            <MenuItem value="10">Low</MenuItem>
+                            <MenuItem value="20">Medium</MenuItem>
+                            <MenuItem value="20">High</MenuItem>
+                        </TextField>
+                        <br></br>
+                        <TextField id="" label="Steps to reproduce" variant="outlined" margin="normal" multiline rows="8" fullWidth/>
                 </div>  
 
-                <div id="dropZone">
-                    <DropzoneAreaBug></DropzoneAreaBug>
+                <div id="dropFile">
+                    <DropzoneAreaBug
+                    dropzoneText="Bokita"></DropzoneAreaBug>
+                    <div id="botonesc">
+                        <Button 
+                        color="secondary"
+                        variant="contained"
+                        size="large"
+                        fullWidth
+                        >Submit</Button>                                     
+                    </div>
                 </div>  
                       
             </div>
-            
-        <div id="starsc">
-            <p style={{fontSize:'15px', marginLeft:'5px'}}>Rate the bug report</p>
-            <Typography component="legend"></Typography>
-            <Rating
-            name="simple-controlled"
-            value={value}
-            onChange={(event, newValue) => {
-                setValue(newValue);
-            }}
-            />
-            {/* <Icon icon="noto:star" width="20" height="20"/>
-            <Icon icon="noto:star" width="20" height="20"/>
-            <Icon icon="noto:star" width="20" height="20"/>
-            <Icon icon="noto:star" width="20" height="20"/> */}
-        </div>
-        <div id="botonesc">
-            <Button 
-            color="success"
-            variant="contained"
-            >Approve</Button>
-         <Button 
-            color="error"
-            variant="contained"
-            >Decline</Button>       
-         <Button 
-            color="warning"
-            variant="contained"
-            >Download</Button>                                           
-        </div>
-
-
 
         </div>
     )
