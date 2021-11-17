@@ -26,20 +26,53 @@ ShopProductCard.propTypes = {
 };
 
 export default function ShopProductCard({ product }) {
-  const { name, cover, price, colors, status, priceSale } = product;
+  const { name, cover, price, gamers, time, priceSale } = product;
 
   return (
     <Card>
-      <Box sx={{ pt: '100%', position: 'relative' }}>
-        <ProductImgStyle alt={name} src={cover} />
-      </Box>
-
       <Stack spacing={2} sx={{ p: 3 }}>
-        <Link to="/dashboard/user" color="inherit" underline="hover" component={RouterLink}>
-          <Typography variant="subtitle2" noWrap>
+      <Link to="/dashboard/paymentFeedback" color="inherit" underline="hover" component={RouterLink}>
+                <Typography variant="h4" noWrap>
             <center>{name}</center>
           </Typography>
         </Link>
+      <Box sx={{ pt: '75%', position: 'relative' }}>
+        <ProductImgStyle src={cover} />
+      </Box>
+        <Link to="/dashboard/paymentFeedback" color="inherit" underline="hover" component={RouterLink}>
+        </Link>
+        <Stack direction="column" alignItems="center" justifyContent="space-between">
+          <Typography variant="h2" align="center" sx={{color: 'green'}}>
+            &nbsp;
+            {price}
+          </Typography>
+          <Typography variant="h5">
+            <Typography
+              component="span"
+              variant="h5"
+              sx={{
+                color: 'black'
+              }}
+            >
+              Gamers:
+            </Typography>
+            &nbsp;
+            {gamers}
+          </Typography>
+          <Typography variant="h5">
+            <Typography
+              component="span"
+              variant="h5"
+              sx={{
+                color: 'black'
+              }}
+            >
+              Time:
+            </Typography>
+            &nbsp;
+            {time}
+          </Typography>
+        </Stack>
       </Stack>
     </Card>
   );

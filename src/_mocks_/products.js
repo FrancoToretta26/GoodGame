@@ -8,8 +8,8 @@ import { mockImgProduct } from '../utils/mockImages';
 const PRODUCT_NAME = [
   'NBA Arcade',
   'Casino Royale',
+  'Casino Royale',
   'F1 Arcade',
-  'Age of Warriors',
   'Nike ZoomX SuperRep Surge',
   'Zoom Freak 2',
   'Nike Air Max Zephyr',
@@ -70,6 +70,21 @@ const PRODUCT_COLOR = [
   '#FFC107'
 ];
 
+const descripciones = [
+  'Reported Bugs:',
+  'Reported Bugs:',
+  'Gamers:',
+  'Reported Bugs:'
+
+]
+
+const types=[
+  'Game Testing',
+  'Game Testing',
+  'Game Feedback',
+  'Bug Bounty'
+]
+
 // ----------------------------------------------------------------------
 
 const products = [...Array(4)].map((_, index) => {
@@ -81,6 +96,8 @@ const products = [...Array(4)].map((_, index) => {
     name: PRODUCT_NAME[index],
     link: PRODUCT_LINK[index],
     price: faker.datatype.number({ min: 70, max: 200, precision: 1 }),
+    descripcion: descripciones[index],
+    type: types[index],
     priceSale: setIndex % 3 ? null : faker.datatype.number({ min: 0, max: 1, precision: 0.01 }),
     colors:
       (setIndex === 1 && PRODUCT_COLOR.slice(0, 2)) ||
