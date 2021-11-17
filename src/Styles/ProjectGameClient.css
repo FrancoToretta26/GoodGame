@@ -29,10 +29,10 @@
 
 #botonesc{
     margin-top: 25px;
-    margin-left: 35px;
-    display: flex;
+
     justify-content: flex-start;
-    gap: 15px;
+    gap: 24px;
+    justify-content: center;
 }
 
 #imgc{
@@ -81,4 +81,47 @@
 #pageContainerc{
     display: flex;
     justify-content: center;
+}
+#starsfeed{
+    margin-bottom: -25px;
+    display: flex;
+    justify-content: flex-start;
+}
+#star{
+    margin-left: -2px;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+#textStar{
+    font-size: 18px;
+    justify-content: flex-start;
+    display: flex;
+}
+#next{
+    float: left;
+}
+#down{
+    float: left;
+    margin-top: 26px;
+}
+#boton{
+    float: left;
+    margin-right: 10px;
+}
+#botonext{
+    float: left;
+    margin-left: 300px;
+}
+#botonprevius{
+    float: left;
+    margin-left: 35px;
+    margin-right: 300px;
+}
+
+#dropZone{
+    width: 1000px;
+}
+
+#formInput{
+    margin-top: 10px;
 }

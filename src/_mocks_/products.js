@@ -31,6 +31,34 @@ const PRODUCT_NAME = [
   'Nike React Art3mis',
   'Nike React Infinity Run Flyknit A.I.R. Chaz Bear'
 ];
+
+const PRODUCT_LINK = [
+  'NBAArcade',
+  'CasinoRoyale',
+  'F1Arcade',
+  'AgeofWarriors',
+  'NikeZoomXSuperRepSurge',
+  'Zoom Freak 2',
+  'Nike Air Max Zephyr',
+  'Jordan Delta',
+  'Air Jordan XXXV PF',
+  'Nike Waffle Racer Crater',
+  'Kyrie 7 EP Sisterhood',
+  'Nike Air Zoom BB NXT',
+  'Nike Air Force 1 07 LX',
+  'Nike Air Force 1 Shadow SE',
+  'Nike Air Zoom Tempo NEXT%',
+  'Nike DBreak-Type',
+  'Nike Air Max Up',
+  'Nike Air Max 270 React ENG',
+  'NikeCourt Royale',
+  'Nike Air Zoom Pegasus 37 Premium',
+  'Nike Air Zoom SuperRep',
+  'NikeCourt Royale',
+  'Nike React Art3mis',
+  'Nike React Infinity Run Flyknit A.I.R. Chaz Bear'
+];
+
 const PRODUCT_COLOR = [
   '#00AB55',
   '#000000',
@@ -66,6 +94,7 @@ const products = [...Array(4)].map((_, index) => {
     id: faker.datatype.uuid(),
     cover: mockImgProduct(setIndex),
     name: PRODUCT_NAME[index],
+    link: PRODUCT_LINK[index],
     price: faker.datatype.number({ min: 70, max: 200, precision: 1 }),
     descripcion: descripciones[index],
     type: types[index],
