@@ -17,6 +17,39 @@ const PRODUCT_COLOR = [
   '#FFC107'
 ];
 
+const PRICEFeedback = [
+  '$75',
+  '$175',
+  '$300',
+  '$550',
+  '$1350',
+  '$2600',
+  '$5000',
+  'Custom',
+];
+
+const gamersFeed = [
+  '10',
+  '25',
+  '50',
+  '100',
+  '250',
+  '500',
+  '1000',
+  'You choose',
+];
+
+const times= [
+  '1 Hour',
+  '1 Hour',
+  '1 Hour',
+  '1 Hour',
+  '1 Hour',
+  '1 Hour',
+  '1 Hour',
+  'You choose',
+];
+
 // ----------------------------------------------------------------------
 
 const products = [...Array(8)].map((_, index) => {
@@ -26,7 +59,9 @@ const products = [...Array(8)].map((_, index) => {
     id: faker.datatype.uuid(),
     cover: mockImgFeedback(setIndex),
     name: PRODUCT_NAME[index],
-    price: faker.datatype.number({ min: 0, max: 500, precision: 0.01 }),
+    price: PRICEFeedback[index],
+    gamers: gamersFeed[index],
+    time: times[index],  
     colors:
       (setIndex === 1 && PRODUCT_COLOR.slice(0, 2)) ||
       (setIndex === 2 && PRODUCT_COLOR.slice(1, 3)) ||

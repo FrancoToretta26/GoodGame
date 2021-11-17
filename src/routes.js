@@ -13,7 +13,9 @@ import NotFound from './pages/Page404';
 import Project1 from './pages/Project1';
 import ProjectGame from './pages/ProjectGame';
 import ProjectGameClient from './pages/ProjectGameClient';
-import PaymentPage from "./components/payment/PaymentPage";
+import PaymentPage from "./components/paymentGameTesting/PaymentPage";
+import PaymentFeedback from "./components/paymentGameFeedback/PaymentPage";
+import PaymentSuscribe from "./components/paymentSuscribe/PaymentPage";
 import DashboardAppTester from './pages/DashboardAppTester';
 import DashboardLayoutTester from './layouts/dashboardTester';
 import Feedback from './pages/GameFeedback';
@@ -31,10 +33,13 @@ export default function Router() {
         { path: 'products/newProject/GameFeedback', element: <Feedback/>},
         { path: 'app', element: <DashboardApp /> },
         { path: 'payment', element: <PaymentPage />},
+        { path: 'paymentFeedback', element: <PaymentFeedback />},
         { path: 'user', element: <User /> },
         { path: 'blog', element: <Blog /> }
       ]
     },
+
+
     {
       path: '/',
       element: <LogoOnlyLayout />,
@@ -63,6 +68,7 @@ export default function Router() {
         { path: 'products/newProject', element: <Project1 /> },
         { path: 'app', element: <DashboardAppTester /> },
         { path: 'payment', element: <PaymentPage />},
+        { path: 'paymentSuscribe', element: <PaymentSuscribe />},
         { path: 'user', element: <User /> },
         { path: 'blog', element: <Blog /> }
       ]

@@ -111,7 +111,7 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
             </Typography>
           </Box>
 
-          <Button fullWidth href="products/newProject" target="_blank" variant="contained">
+          <Button fullWidth href="/dashboardTester/paymentSuscribe" target="_blank" variant="contained">
             Suscribe
           </Button>
         </Stack>

@@ -26,7 +26,7 @@ ShopProductCard.propTypes = {
 };
 
 export default function ShopProductCard({ product }) {
-  const { name, cover, price, colors, status, priceSale } = product;
+  const { name, cover, price, type, descripcion, priceSale } = product;
 
   return (
     <Card>
@@ -36,12 +36,12 @@ export default function ShopProductCard({ product }) {
 
       <Stack spacing={2} sx={{ p: 3 }}>
         <Link to="/products/CasinoRoyale" color="inherit" underline="hover" component={RouterLink}>
-          <Typography variant="subtitle2" noWrap>
+          <Typography variant="h5" noWrap>
             <center>{name}</center>
           </Typography>
         </Link>
 
-        <Stack direction="row" alignItems="center" justifyContent="space-between">
+        <Stack direction="column" alignItems="center" justifyContent="space-between">
           <Typography variant="subtitle1">
             <Typography
               component="span"
@@ -50,10 +50,23 @@ export default function ShopProductCard({ product }) {
                 color: 'text.disabled'
               }}
             >
-              Reported Bugs:
+              {descripcion}
             </Typography>
             &nbsp;
             {price}
+          </Typography>
+          <Typography variant="subtitle1">
+            <Typography
+              component="span"
+              variant="body1"
+              sx={{
+                color: 'text.disabled'
+              }}
+            >
+              Project Type:
+            </Typography>
+            &nbsp;
+            {type}
           </Typography>
         </Stack>
       </Stack>

@@ -9,7 +9,7 @@ import {
   formatExpirationDate
 } from './cardUtils'
 import { TextField, Button, Typography, Stack, Container } from '@mui/material'
-import Page from '.././Page';
+import Page from '../Page';
 import { Link as RouterLink } from 'react-router-dom';
 import { size } from 'lodash'
 import { color } from '@mui/system'
