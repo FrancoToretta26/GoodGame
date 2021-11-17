@@ -21,9 +21,10 @@ import DashboardAppTester from './pages/DashboardAppTester';
 import DashboardLayoutTester from './layouts/dashboardTester';
 import Feedback from './pages/GameFeedback';
 import BugReport from './pages/BugReport';
-import FeedbackGamer from './pages/FeedbackGamer'
+import FeedbackGamer from './pages/FeedbackGamer';
+import MyActiveProjects from './pages/MyActiveProjects';
+import ProjectGameTester from './pages/ProjectGameTester';
 // ----------------------------------------------------------------------
-
 export default function Router() {
   return useRoutes([
     {
@@ -33,7 +34,8 @@ export default function Router() {
         { element: <Navigate to="/dashboard/app" replace /> },
         { path: 'products', element: <Products /> },
         { path: 'products/newProject', element: <Project1 /> },
-        { path: 'products/newProject/GameFeedback', element: <Feedback/>},
+        { path: 'GameFeedback', element: <Feedback/>},        
+        { path: 'GameFeedback', element: <Feedback/>},
         { path: 'app', element: <DashboardApp /> },
         { path: 'payment', element: <PaymentPage />},
         { path: 'paymentFeedback', element: <PaymentFeedback />},
@@ -59,16 +61,17 @@ export default function Router() {
       children: [
         { element: <Navigate to="/dashboard/app" replace /> },
         { path: 'CasinoRoyale', element: <ProjectGame /> },
-        { path: 'CasinoRoyale/Report1', element: <BugReport /> }
+        { path: 'ProjectFeedback', element: <ProjectFeedbackGamer/>}
       ]
     },
     {
-      path: '/products',
-      element: <DashboardLayout />,
+      path: '/projects',
+      element: <DashboardLayoutTester />,
       children: [
-        { element: <Navigate to="/dashboard/app" replace /> },
-        { path: 'CasinoRoyale', element: <ProjectGame /> },
-        { path: 'CasinoRoyale/Feedback', element: <FeedbackGamer /> }
+        { element: <Navigate to="/dashboardTester/app" replace /> },
+        { path: 'CasinoRoyale', element: <ProjectGameTester /> },
+        { path: 'FeedbackGamer', element: <FeedbackGamer /> },
+        { path: 'CasinoRoyale/Report', element: <BugReport /> }
       ]
     },
     {
@@ -76,8 +79,8 @@ export default function Router() {
       element: <DashboardLayoutTester />,
       children: [
         { element: <Navigate to="/dashboardTester/app" replace /> },
-        { path: 'products', element: <Products /> },
-        { path: 'products/newProject', element: <Project1 /> },
+        { path: 'myActiveProjects', element: <MyActiveProjects /> },
+        { path: 'myActiveProjects', element: <MyActiveProjects /> },
         { path: 'app', element: <DashboardAppTester /> },
         { path: 'payment', element: <PaymentPage />},
         { path: 'paymentSuscribe', element: <PaymentSuscribe />},

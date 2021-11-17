@@ -14,12 +14,12 @@ const getIcon = (name) => <Icon icon={name} width={22} height={22} />;
 const sidebarConfig = [
   {
     title: 'dashboard',
-    path: '/dashboard/app',
+    path: '/dashboardTester/app',
     icon: getIcon(pieChart2Fill)
   },
   {
-    title: 'My Projects',
-    path: '/dashboard/products',
+    title: 'My Active Projects',
+    path: '/dashboardTester/myActiveProjects',
     icon: getIcon(shoppingBagFill)
   }
 ];

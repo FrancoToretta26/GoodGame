@@ -35,7 +35,7 @@ const PRODUCT_NAME = [
 const PRODUCT_LINK = [
   'NBAArcade',
   'CasinoRoyale',
-  'ProjectFeedback',
+  'FeedbackGamer',
   'AgeofWarriors',
   'NikeZoomXSuperRepSurge',
   'Zoom Freak 2',
@@ -87,7 +87,7 @@ const types=[
 
 // ----------------------------------------------------------------------
 
-const products = [...Array(4)].map((_, index) => {
+const ProjectsTester = [...Array(4)].map((_, index) => {
   const setIndex = index + 1;
 
   return {
@@ -111,4 +111,4 @@ const products = [...Array(4)].map((_, index) => {
   };
 });
 
-export default products;
+export default ProjectsTester;

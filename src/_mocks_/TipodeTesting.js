@@ -7,7 +7,7 @@ import { mockImgCover } from '../utils/mockImages';
 
 const PRODUCT_NAME = ['Game Testing', 'Game Feedback', 'Bug Bounty'];
 
-const PRODUCT_LINK = ['user','','']
+const PRODUCT_LINK = ['user','GameFeedback','']
 
 const PRODUCT_COLOR = [
   '#00AB55',
