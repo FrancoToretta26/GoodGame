@@ -19,6 +19,7 @@ import DashboardAppTester from './pages/DashboardAppTester';
 import DashboardLayoutTester from './layouts/dashboardTester';
 import Feedback from './pages/GameFeedback';
 import BugReport from './pages/BugReport';
+import FeedbackGamer from './pages/FeedbackGamer'
 // ----------------------------------------------------------------------
 
 export default function Router() {
@@ -53,7 +54,7 @@ export default function Router() {
       children: [
         { element: <Navigate to="/dashboard/app" replace /> },
         { path: 'CasinoRoyale', element: <ProjectGame /> },
-        { path: 'CasinoRoyale/Report1', element: <ProjectGameClient /> }
+        { path: 'CasinoRoyale/Report1', element: <BugReport /> }
       ]
     },
     {
@@ -62,7 +63,7 @@ export default function Router() {
       children: [
         { element: <Navigate to="/dashboard/app" replace /> },
         { path: 'CasinoRoyale', element: <ProjectGame /> },
-        { path: 'CasinoRoyale/Feedback', element: <ProjectFeedbackGamer /> }
+        { path: 'CasinoRoyale/Feedback', element: <FeedbackGamer /> }
       ]
     },
     {

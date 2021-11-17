@@ -14,7 +14,6 @@ export default function ProjectFeedbackGamer() {
             <p id="subTitlec">Juan Cruz Lafranconi</p>
 
             <div id="pageContainerc">
-
                 <div id="cardsc">
                     <Card style={styles.card}>
                     <CardHeader title="What dow you think about..." style={{ textAlign: 'center' }}/>
