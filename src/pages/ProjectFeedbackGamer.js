@@ -10,165 +10,158 @@ export default function ProjectFeedbackGamer() {
     const [value, setValue] = React.useState(2);
     return(
         <div>
-            <p id="titlec">BR#000008</p>
-            <p id="subTitlec">BlackJack not working as expected</p>
+            <p id="titlec">Gamer's Feedback</p>
+            <p id="subTitlec">Juan Cruz Lafranconi</p>
 
             <div id="pageContainerc">
 
                 <div id="cardsc">
                     <Card style={styles.card}>
-                        <CardHeader title="Gamer's Feedback"/>
-                        
-                        <div id="starsfeed">
-                        <CardContent id="textStar">Gameplay 
-                                <Rating id="star"
-                                    name="read-only"
-                                    value={5}
-                                    readOnly
-                                />
-                                {/* <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/> */}
-                        </CardContent>
-
-                        </div>
-                        <div id="starsfeed">
-                        <CardContent id="textStar">Music 
-                                <Rating id="star"
-                                    name="read-only"
-                                    value={5}
-                                    readOnly
-                                />
-                                {/* <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/> */}
-                        </CardContent>
-                        </div>
-
-                        <div id="starsfeed">
-                        <CardContent id="textStar">Graphics 
-                                <Rating id="star"
-                                    name="read-only"
-                                    value={5}
-                                    readOnly
-                                />
-                                {/* <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/> */}
-                        </CardContent>
+                    <CardHeader title="What dow you think about..." style={{ textAlign: 'center' }}/>
+                    <div id="pageContainerc">
+                        <div id="next">
+                            <div id="starsfeed">
+                                <CardContent id="textStar">Gameplay</CardContent>
+                            </div>
+                            <div id="starsfeed">
+                                <CardContent id="textStar">Music</CardContent>
+                            </div>
+                            <div id="starsfeed">
+                                <CardContent id="textStar">Graphics</CardContent>
+                            </div>
+                            <div id="starsfeed">
+                                <CardContent id="textStar">Narrative</CardContent>
+                            </div>
+                            <div id="starsfeed">
+                                <CardContent id="textStar">Animation</CardContent>
+                            </div>
+                            <div id="starsfeed">
+                                <CardContent id="textStar">UI/UX</CardContent>
+                            </div>
+                            <div id="starsfeed">
+                                <CardContent id="textStar">Tutorial</CardContent>
+                            </div>
+                            <div>
+                                <CardContent id="textStar">Worldbuilding</CardContent>
+                            </div>
                         </div>
 
-                        <div id="starsfeed">
-                        <CardContent id="textStar">Narrative 
-                                <Rating id="star"
-                                    name="read-only"
-                                    value={5}
-                                    readOnly
-                                />
-                                {/* <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/> */}
-                        </CardContent>
-                        </div>
+                        <div id="down">
+                            <div>
+                            <Rating id="star"
+                                        name="read-only"
+                                        value={5}
+                                        readOnly
+                                    />
+                            </div>
+                            <div>
+                            <Rating id="star"
+                                        name="read-only"
+                                        value={5}
+                                        readOnly
+                                    />
+                            </div>
+                            <div>
+                            <Rating id="star"
+                                        name="read-only"
+                                        value={5}
+                                        readOnly
+                                    />
+                            </div>
+                            <div>
+                            <Rating id="star"
+                                        name="read-only"
+                                        value={5}
+                                        readOnly
+                                    />
+                            </div>
+                            <div>
+                            <Rating id="star"
+                                        name="read-only"
+                                        value={5}
+                                        readOnly
+                                    />
+                            </div>
+                            <div>
+                            <Rating id="star"
+                                        name="read-only"
+                                        value={5}
+                                        readOnly
+                                    />
+                            </div>
+                            <div>
+                            <Rating id="star"
+                                        name="read-only"
+                                        value={5}
+                                        readOnly
+                                    />
+                            </div>
+                            <div>
+                            <Rating id="star"
+                                        name="read-only"
+                                        value={5}
+                                        readOnly
+                                    />
+                            </div>
+                    </div>
+                    </div>
 
-                        <div id="starsfeed">
-                        <CardContent id="textStar">Animation 
-                                <Rating id="star"
-                                    name="read-only"
-                                    value={5}
-                                    readOnly
-                                />
-                                {/* <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/> */}
-                        </CardContent>
-                        </div>
-
-                        <div id="starsfeed">
-                        <CardContent id="textStar">Tutorial 
-                                <Rating id="star"
-                                    name="read-only"
-                                    value={5}
-                                    readOnly
-                                />
-                                {/* <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/> */}
-                        </CardContent>
-                        </div>
-
-                        <div>
-                        <CardContent id="textStar">Worldbuilding 
-                                <Rating id="star"
-                                    name="read-only"
-                                    value={5}
-                                    readOnly
-                                />
-                                {/* <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/>
-                                <Icon icon="noto:star" width="20" height="20"/> */}
-                        </CardContent>
-                        
-                        </div>
-                        
+    
                     </Card>
                     <br></br>
                     <Card style={styles.card}>
                         <CardHeader    
-                        title="Description"/>
-                        <CardContent>When a user wins a match of blackjack and quit the game, the funds are not available in the user wallet
-                        When a user wins a match of blackjack and quit the game, the funds are not available in the user wallet
-                        When a user wins a match of blackjack and quit the game, the funds are not available in the user wallet 
-                            to spped up the game.
+                        title="Liked the most"/>
+                        <CardContent>I really enjoyed the UI and UX. It was really 
+                            intuitive and simple to use while being creative and 
+                            in line with the theme of the game
                         </CardContent>
                     </Card>
                     <br></br>
                     <Card style={styles.card}>
                         <CardHeader    
-                        style={{alignItems:"center", display:"flex"}}
-                        title="Severity: Low"/>
+                        title="Liked the least"/>
+                        <CardContent>Some of my favourite casino games weren't in the game
+                            maybe you could expand to more games. Also the prizes weren't interesting enough
+                        </CardContent>
                     </Card>
                     <br></br>
                     <Card style={styles.card}>
                         <CardHeader    
-                        title="Steps to reproduce"/>
-                        <CardContent><p>1- Start a normal BlackJack Game</p>
-                        <p>2- Play until you win</p>
-                        <p>3- Make a money checkout</p>
-                        <p>4- Check your wallet, it'll have less funds than it should</p>
+                        title="Changes"/>
+                        <CardContent>It would be interesting if the game had an underlaying
+                            story mode in which you could perfect your skills againt the Npc.
                         </CardContent>
                     </Card>
-                </div>  
-
-                <div>
-                    <CarouselBugReport></CarouselBugReport>
-                </div>  
+                    <br></br>
+                </div> 
                       
             </div>
         <div id="botonesc">
-            <Button 
-            color="success"
+
+            <Button id="botonprevius"
+            color="inherit"
+            variant="contained"
+            >Previus</Button>
+
+            <Button id="boton"
+            color="primary"
             variant="contained"
             >Approve</Button>
-         <Button 
+         <Button id="boton"
             color="error"
             variant="contained"
             >Decline</Button>       
-         <Button 
-            color="warning"
+         <Button id="boton"
+            color="secondary"
             variant="contained"
-            >Download</Button>                                           
+            > Download </Button> 
+
+        <Button id="botonext"
+            color="inherit"
+            variant="contained"
+            >Next</Button>                                         
         </div>
-
-
-
         </div>
     )
 }
