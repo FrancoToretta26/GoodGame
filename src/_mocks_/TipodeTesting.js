@@ -6,6 +6,9 @@ import { mockImgCover } from '../utils/mockImages';
 // ----------------------------------------------------------------------
 
 const PRODUCT_NAME = ['Game Testing', 'Game Feedback', 'Bug Bounty'];
+
+const PRODUCT_LINK = ['user','','']
+
 const PRODUCT_COLOR = [
   '#00AB55',
   '#000000',
@@ -26,6 +29,7 @@ const products = [...Array(3)].map((_, index) => {
     id: faker.datatype.uuid(),
     cover: mockImgCover(setIndex),
     name: PRODUCT_NAME[index],
+    link: PRODUCT_LINK[index],
     price: faker.datatype.number({ min: 0, max: 500, precision: 0.01 }),
     colors:
       (setIndex === 1 && PRODUCT_COLOR.slice(0, 2)) ||
