@@ -1,7 +1,7 @@
 import faker from 'faker';
 import { sample } from 'lodash';
 // utils
-import { mockImgProduct } from '../utils/mockImages';
+import { mockImgProject} from '../utils/mockImages';
 
 // ----------------------------------------------------------------------
 
@@ -92,7 +92,7 @@ const ProjectsTester = [...Array(4)].map((_, index) => {
 
   return {
     id: faker.datatype.uuid(),
-    cover: mockImgProduct(setIndex),
+    cover: mockImgProject(setIndex),
     name: PRODUCT_NAME[index],
     link: PRODUCT_LINK[index],
     price: faker.datatype.number({ min: 70, max: 200, precision: 1 }),
