@@ -82,3 +82,8 @@
     display: flex;
     justify-content: center;
 }
+
+
+#dropZone{
+    width: 2000px;
+}
