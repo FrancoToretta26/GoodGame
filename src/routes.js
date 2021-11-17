@@ -13,10 +13,13 @@ import NotFound from './pages/Page404';
 import Project1 from './pages/Project1';
 import ProjectGame from './pages/ProjectGame';
 import ProjectGameClient from './pages/ProjectGameClient';
+import ProjectFeedbackGamer from './pages/ProjectFeedbackGamer';
 import PaymentPage from "./components/payment/PaymentPage";
 import DashboardAppTester from './pages/DashboardAppTester';
 import DashboardLayoutTester from './layouts/dashboardTester';
 import Feedback from './pages/GameFeedback';
+import BugReport from './pages/BugReport';
+import FeedbackGamer from './pages/FeedbackGamer'
 // ----------------------------------------------------------------------
 
 export default function Router() {
@@ -51,7 +54,16 @@ export default function Router() {
       children: [
         { element: <Navigate to="/dashboard/app" replace /> },
         { path: 'CasinoRoyale', element: <ProjectGame /> },
-        { path: 'CasinoRoyale/Report1', element: <ProjectGameClient /> }
+        { path: 'CasinoRoyale/Report1', element: <BugReport /> }
+      ]
+    },
+    {
+      path: '/products',
+      element: <DashboardLayout />,
+      children: [
+        { element: <Navigate to="/dashboard/app" replace /> },
+        { path: 'CasinoRoyale', element: <ProjectGame /> },
+        { path: 'CasinoRoyale/Feedback', element: <FeedbackGamer /> }
       ]
     },
     {
